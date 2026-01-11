@@ -9,3 +9,5 @@ width = float(input())
 calculate_area(length, width)
 a = calculate_area(length, width)
 print(a)
+
+
