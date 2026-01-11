@@ -38,4 +38,3 @@ while True:
         print("All expenses cleared.")
     else:
         print("Invalid choice. Please try again.")
-		

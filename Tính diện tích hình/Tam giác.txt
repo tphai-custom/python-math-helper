@@ -3,4 +3,4 @@ chieucao= input("Chieu cao cua tam giac ")
 canhday = input("Chieu dai canh day cua tam giac ")
 x = float(chieucao) * float(canhday)
 x = x/2
-print(x)
+print(x) 
