@@ -1,3 +1,4 @@
+import math
 print("Welcome to the Daily Expense Tracker!")
 print()
 print('''Menu:
@@ -38,3 +39,5 @@ while True:
         print("All expenses cleared.")
     else:
         print("Invalid choice. Please try again.")
+		
+	

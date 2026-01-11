@@ -1,3 +1,4 @@
+import math
 a = float(input("Nhap he so cho x^2: "))
 b = float(input("Nhap he so cho x: "))
 c = float(input("Nhap he so tu do: "))
