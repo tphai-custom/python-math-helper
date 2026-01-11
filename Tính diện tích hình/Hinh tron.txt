@@ -1,0 +1,7 @@
+import math
+bankinh= input("Ban kinh cua hinh tron ")
+number = input("Nhap so chu cai lam tron ")
+x = float(bankinh) * float(bankinh)
+x = x*math.pi
+y = int(number)
+print(round(x,y))

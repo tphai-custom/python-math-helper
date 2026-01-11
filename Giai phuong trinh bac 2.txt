@@ -1,0 +1,18 @@
+a = float(input("Nhap he so cho x^2: "))
+b = float(input("Nhap he so cho x: "))
+c = float(input("Nhap he so tu do: "))
+
+
+denta = math.pow(b, 2) - 4 * a * c
+
+if denta == 0:
+    x3 = -b / (2 * a)
+    print(x3)
+elif denta < 0:
+     print("Khong ton tai nghiem")
+else:
+    x1 = (-b - math.sqrt(denta)) / (2 * a)
+    x2 = (-b + math.sqrt(denta)) / (2 * a)
+    print("x1 =", x1)
+    print("x2 =", x2)
+	
