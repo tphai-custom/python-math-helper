@@ -3,7 +3,6 @@ a = float(input("Nhap he so cho x^2: "))
 b = float(input("Nhap he so cho x: "))
 c = float(input("Nhap he so tu do: "))
 
-
 denta = math.pow(b, 2) - 4 * a * c
 
 if denta == 0:
