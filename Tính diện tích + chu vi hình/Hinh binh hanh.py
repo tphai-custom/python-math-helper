@@ -1,13 +1,21 @@
-#Tinh dien tich hinh binh hanh
-import math
-a = float(input("Nhap canh day cua hinh binh hanh(cm) "))
-b = float(input("Nhap chieu cao tuong ung voi day cua hinh binh hanh(cm) "))
-dientichhbh = a*b
-print(dientichhbh)
+def input_positive_float(prompt: str) -> float:
+    while True:
+        try:
+            x = float(input(prompt))
+            if x <= 0:
+                print("Vui long nhap so > 0.")
+                continue
+            return x
+        except ValueError:
+            print("Sai dinh dang. Vui long nhap so (vi du: 12.5).")
 
-#Tinh chu vi hinh binh hanh
-import math
-canhday = float(input("Nhap do dai canh day(cm) "))
-canhben = float(input("Nhap do dai canh ben(cm) "))
-chuvi = (canhday + canhben)*2
-print(chuvihbh)
+# Dien tich: S = day * chieu cao
+day = input_positive_float("Nhap canh day cua hinh binh hanh (cm): ")
+cao = input_positive_float("Nhap chieu cao tuong ung voi day (cm): ")
+dien_tich = day * cao
+print(f"Dien tich hinh binh hanh = {dien_tich} cm^2")
+
+# Chu vi: P = 2 * (day + canh ben)
+canh_ben = input_positive_float("Nhap do dai canh ben (cm): ")
+chu_vi = 2 * (day + canh_ben)
+print(f"Chu vi hinh binh hanh = {chu_vi} cm")

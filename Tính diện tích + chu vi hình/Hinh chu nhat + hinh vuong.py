@@ -1,15 +1,20 @@
-# Tinh dien tich hinh chu nhat + hinh vuong
-import math
-import time
-def calculate_area(length, width):
-    area = float(length * width )
-    return area
+def input_positive_float(prompt: str) -> float:
+    while True:
+        try:
+            x = float(input(prompt))
+            if x <= 0:
+                print("Vui long nhap so > 0.")
+                continue
+            return x
+        except ValueError:
+            print("Sai dinh dang. Vui long nhap so.")
 
-length = float(input("Nhap chieu dai cua hinh chu nhat/ hinh vuong: "))
-width = float(input("Nhap chieu dai cua hinh chu nhat/ hinh vuong: "))
-calculate_area(length, width)
-dthcn = calculate_area(length, width)
-print(dthcn)
+chieu_dai = input_positive_float("Nhap chieu dai (cm): ")
+chieu_rong = input_positive_float("Nhap chieu rong (cm): ")
 
+dien_tich = chieu_dai * chieu_rong
+chu_vi = 2 * (chieu_dai + chieu_rong)
 
-time.sleep(2)
+print(f"Dien tich = {dien_tich} cm^2")
+print(f"Chu vi    = {chu_vi} cm")
+
