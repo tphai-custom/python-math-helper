@@ -9,4 +9,4 @@ canh1 = float(input("Nhap do dai canh 1(cm) "))
 canh2 = float(input("Nhap do dai canh 2(cm) "))
 canh3 = float(input("Nhap do dai canh 3(cm) "))
 chuvitg = canh1 + canh2 + canh3
-print(chuvi)
+print(chuvitg)
